@@ -1,0 +1,18 @@
+//<script type="text/jsx">
+
+function Usuarios(){
+    useEffect(listaUsuarios, [])
+
+    function listaUsuarios(){
+        google.script.run.withSuccessHandler(res =>{
+            console.log(res);
+
+        }).listaUsuarios();
+    }
+
+return (
+    <div>Usuarios</div>
+)
+}
+
+//</script>
